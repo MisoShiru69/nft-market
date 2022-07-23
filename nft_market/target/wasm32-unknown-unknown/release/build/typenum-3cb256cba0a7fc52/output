@@ -1,0 +1,2 @@
+cargo:rustc-env=TYPENUM_BUILD_CONSTS=/home/miso/!Programing/Miso-Repo/nft-market/nft_market/target/wasm32-unknown-unknown/release/build/typenum-3cb256cba0a7fc52/out/consts.rs
+cargo:rustc-env=TYPENUM_BUILD_OP=/home/miso/!Programing/Miso-Repo/nft-market/nft_market/target/wasm32-unknown-unknown/release/build/typenum-3cb256cba0a7fc52/out/op.rs
