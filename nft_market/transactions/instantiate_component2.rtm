@@ -1,1 +1,2 @@
 CALL_FUNCTION PackageAddress("${PACKAGE}") "MintNft" "new";
+CALL_METHOD_WITH_ALL_RESOURCES ComponentAddress("${a1}") "deposit_batch";

@@ -1,0 +1,12 @@
+CALL_METHOD 
+    ComponentAddress("020d3869346218a5e8deaaf2001216dc00fcacb79fb43e30ded79a") 
+    "withdraw" 
+    ResourceAddress("03c9953a47a9a0a09115aadac0400b6d5aa7f453bd3dc75dd50f6c");
+
+TAKE_FROM_WORKTOP 
+    ResourceAddress("03c9953a47a9a0a09115aadac0400b6d5aa7f453bd3dc75dd50f6c") 
+    Bucket("nft");
+
+CALL_METHOD_WITH_ALL_RESOURCES 
+    ComponentAddress("02c51eac77c945488ab3648d324642b1dc820eb4924879d32a4074") 
+    "deposit_batch";

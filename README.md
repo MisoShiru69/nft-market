@@ -10,11 +10,16 @@ export PACKAGE=$(echo "$PK_OP" | sed -nr "s/Success! New Package: ([[:alnum:]_]+
 echo $PACKAGE
 
 CP1_OP=$(resim run "./transactions/instantiate_component1.rtm")
+export comp1=$(echo "$CP1_OP" | sed -nr "s/└─ Component: ([[:alnum:]_]+)/\1/p")
 echo $CP1_OP
-export COMPONENT1=$(echo "$CP1_OP" | sed -nr "s/└─ Component: ([[:alnum:]_]+)/\1/p")
-echo $COMPONENT1
+echo $comp1
 
 CP2_OP=$(resim run "./transactions/instantiate_component2.rtm")
+export comp2=$(echo "$CP2_OP" | sed -nr "s/└─ Component: ([[:alnum:]_]+)/\1/p")
 echo $CP2_OP
-export COMPONENT2=$(echo "$CP2_OP" | sed -nr "s/└─ Component: ([[:alnum:]_]+)/\1/p")
-echo $COMPONENT2
+echo $comp2
+
+export nft=$(echo "$CP2_OP" | sed -nr "s/└─ Resource: ([[:alnum:]_]+)/\1/p")
+echo $nft
+
+resim call-method $comp1 new_liquidity_pool 1,$nft 0000000000000001 100
