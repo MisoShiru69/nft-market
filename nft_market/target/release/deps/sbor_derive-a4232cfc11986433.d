@@ -1,0 +1,10 @@
+G:\My Drive\GitHub\nft-market\nft_market\target\release\deps\sbor_derive-a4232cfc11986433.dll: C:\Users\renee\.cargo\git\checkouts\radixdlt-scrypto-1833d92590086ce0\8c176b7\sbor-derive\src\lib.rs C:\Users\renee\.cargo\git\checkouts\radixdlt-scrypto-1833d92590086ce0\8c176b7\sbor-derive\src\decode.rs C:\Users\renee\.cargo\git\checkouts\radixdlt-scrypto-1833d92590086ce0\8c176b7\sbor-derive\src\describe.rs C:\Users\renee\.cargo\git\checkouts\radixdlt-scrypto-1833d92590086ce0\8c176b7\sbor-derive\src\encode.rs C:\Users\renee\.cargo\git\checkouts\radixdlt-scrypto-1833d92590086ce0\8c176b7\sbor-derive\src\type_id.rs C:\Users\renee\.cargo\git\checkouts\radixdlt-scrypto-1833d92590086ce0\8c176b7\sbor-derive\src\utils.rs
+
+G:\My Drive\GitHub\nft-market\nft_market\target\release\deps\sbor_derive-a4232cfc11986433.d: C:\Users\renee\.cargo\git\checkouts\radixdlt-scrypto-1833d92590086ce0\8c176b7\sbor-derive\src\lib.rs C:\Users\renee\.cargo\git\checkouts\radixdlt-scrypto-1833d92590086ce0\8c176b7\sbor-derive\src\decode.rs C:\Users\renee\.cargo\git\checkouts\radixdlt-scrypto-1833d92590086ce0\8c176b7\sbor-derive\src\describe.rs C:\Users\renee\.cargo\git\checkouts\radixdlt-scrypto-1833d92590086ce0\8c176b7\sbor-derive\src\encode.rs C:\Users\renee\.cargo\git\checkouts\radixdlt-scrypto-1833d92590086ce0\8c176b7\sbor-derive\src\type_id.rs C:\Users\renee\.cargo\git\checkouts\radixdlt-scrypto-1833d92590086ce0\8c176b7\sbor-derive\src\utils.rs
+
+C:\Users\renee\.cargo\git\checkouts\radixdlt-scrypto-1833d92590086ce0\8c176b7\sbor-derive\src\lib.rs:
+C:\Users\renee\.cargo\git\checkouts\radixdlt-scrypto-1833d92590086ce0\8c176b7\sbor-derive\src\decode.rs:
+C:\Users\renee\.cargo\git\checkouts\radixdlt-scrypto-1833d92590086ce0\8c176b7\sbor-derive\src\describe.rs:
+C:\Users\renee\.cargo\git\checkouts\radixdlt-scrypto-1833d92590086ce0\8c176b7\sbor-derive\src\encode.rs:
+C:\Users\renee\.cargo\git\checkouts\radixdlt-scrypto-1833d92590086ce0\8c176b7\sbor-derive\src\type_id.rs:
+C:\Users\renee\.cargo\git\checkouts\radixdlt-scrypto-1833d92590086ce0\8c176b7\sbor-derive\src\utils.rs:

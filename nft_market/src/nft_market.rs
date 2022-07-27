@@ -91,9 +91,11 @@ blueprint! {
                     
                     info!("[DEX Add Liquidity]: Pool for {:?} already exists. Adding liquidity directly.", nft_bucket_id.resource_address());
 
-                    self.update_tracker_hashmaps(nft_bucket_id.resource_address(), nft_id, price);
-
                     existing_liquidity_pool.deposit(nft_bucket_id);
+
+                    let nft_bucket_id:Bucket = nft_bucket.take_non_fungible(&nft_id);
+
+                    self.update_tracker_hashmaps(nft_bucket_id.resource_address(), nft_id, price);
 
                     return nft_bucket;
                 
