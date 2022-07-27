@@ -19,9 +19,9 @@ blueprint! {
 
     impl MintNft {
         
-        pub fn new() -> (ComponentAddress,Bucket) {
+        pub fn new() -> (ComponentAddress,Bucket, Bucket) {
            
-            let nft_bucket: Bucket = ResourceBuilder::new_non_fungible()
+            let nft_bucket1: Bucket = ResourceBuilder::new_non_fungible()
                 .metadata("name", "Newly Minted NFTs")
                 .initial_supply([
                     (
@@ -56,6 +56,42 @@ blueprint! {
                     ),
                                 
                 ]);
+
+                let nft_bucket2: Bucket = ResourceBuilder::new_non_fungible()
+                .metadata("name", "Newly Minted NFTs")
+                .initial_supply([
+                    (
+                        NonFungibleId::from_u64(6u64),
+                        Nft {
+                            generation:0
+                        }
+                    ),
+                    (
+                        NonFungibleId::from_u64(7u64),
+                        Nft {
+                            generation:0
+                        }
+                    ),
+                    (
+                        NonFungibleId::from_u64(8u64),
+                        Nft {
+                            generation:0
+                        }
+                    ),
+                    (
+                        NonFungibleId::from_u64(9u64),
+                        Nft {
+                            generation:0
+                        }
+                    ),
+                    (
+                        NonFungibleId::from_u64(10u64),
+                        Nft {
+                            generation:0
+                        }
+                    ),
+                                
+                ]);
             
             // let nft_resource_address = nft_bucket.resource_address();
 
@@ -69,7 +105,7 @@ blueprint! {
             .instantiate()
             .globalize();
 
-            return (component, nft_bucket);
+            return (component, nft_bucket1, nft_bucket2);
         }
 
     }

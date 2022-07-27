@@ -11,6 +11,7 @@ blueprint! {
         
         pub fn new(address:ResourceAddress) -> ComponentAddress {          
 
+            
             let nft_liquidity_pool = Self {
                 
                 nft_vault:Vault::new(address),
