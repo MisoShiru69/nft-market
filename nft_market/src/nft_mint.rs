@@ -22,7 +22,7 @@ blueprint! {
         pub fn new() -> (ComponentAddress,Bucket, Bucket) {
            
             let nft_bucket1: Bucket = ResourceBuilder::new_non_fungible()
-                .metadata("name", "Newly Minted NFTs")
+                .metadata("name", "Newly Minted NFTs Set 2")
                 .initial_supply([
                     (
                         NonFungibleId::from_u64(1u64),
@@ -58,7 +58,7 @@ blueprint! {
                 ]);
 
                 let nft_bucket2: Bucket = ResourceBuilder::new_non_fungible()
-                .metadata("name", "Newly Minted NFTs")
+                .metadata("name", "Newly Minted NFTs Set 1")
                 .initial_supply([
                     (
                         NonFungibleId::from_u64(6u64),

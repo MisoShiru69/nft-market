@@ -82,6 +82,10 @@ blueprint! {
             //Put all the NFTs in a bucket and take the one with the corresponding NFT ID out.
             let nft_bucket_id:Bucket = nft_bucket.take_non_fungible(&nft_id);
 
+            //Clone the NFTs resource address to use for updating Hashmap
+            let nft_bucket_id_clone:ResourceAddress = nft_bucket_id.resource_address().clone();
+
+
             //Check to see if liquidity pool already exisits in the Hashmap<ResouceAddress, NftLiquidityPool>
             let existing_liquidity_pool: Option<&NftLiquidityPool> = self.resouce_liquidity_tracker.get(&nft_bucket_id.resource_address());
             
@@ -91,9 +95,9 @@ blueprint! {
                     
                     info!("[DEX Add Liquidity]: Pool for {:?} already exists. Adding liquidity directly.", nft_bucket_id.resource_address());
 
-                    self.update_tracker_hashmaps(nft_bucket_id.resource_address(), nft_id, price);
-
                     existing_liquidity_pool.deposit(nft_bucket_id);
+
+                    self.update_tracker_hashmaps(nft_bucket_id_clone, nft_id, price);
 
                     return nft_bucket;
                 
@@ -124,6 +128,13 @@ blueprint! {
                 }
             }
         }
+
+        pub fn check_nft_price(&self, nft_resource_address:ResourceAddress) {
+            let inner_hash = self.resource_hash_tracker.get(&nft_resource_address);
+
+            info!("{:?}", inner_hash);
+        }
+
     }
 
 }
